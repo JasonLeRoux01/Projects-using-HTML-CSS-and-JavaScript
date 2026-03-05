@@ -1,0 +1,199 @@
+:root {
+  --bg: #0f1724;
+  --card: #071027;
+  --accent: #7c3aed;
+  --muted: #9aa4b2;
+  --white: #e6eef6;
+  --danger: #ef4444;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #002252;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+}
+
+.card {
+  width: min(820px, 96%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+header {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), #22c1c3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.lead {
+  margin: 4px 0 12px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.calc-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 18px;
+  align-items: start;
+}
+
+@media (max-width:800px) {
+  .calc-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.controls input[type="number"] {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  background: transparent;
+  color: inherit;
+  outline: none;
+}
+
+.controls input:focus {
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.08);
+  border-color: rgba(99, 102, 241, 0.6);
+}
+
+.tip-buttons .buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tipBtn {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 0;
+  background: linear-gradient(90deg, var(--accent), #22c1c3);
+  color: white;
+  font-weight: 600;
+  cursor: pointer
+}
+
+.tipBtn.inactive {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: var(--muted)
+}
+
+.tip-buttons input {
+  padding: 8px 10px;
+  min-width: 80px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  background: transparent;
+  color: inherit;
+}
+
+.form-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.btn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 0;
+  background: linear-gradient(90deg, var(--accent), #22c1c3);
+  color: white;
+  font-weight: 600;
+  cursor: pointer
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: var(--muted)
+}
+
+.results {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.value {
+  font-family: ui-monospace, monospace;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.muted {
+  font-size: 12px;
+  color: var(--muted)
+}
+
+.error {
+  color: var(--danger);
+  font-size: 13px;
+  min-height: 18px
+}
+
+.small {
+  font-size: 13px;
+  color: var(--muted)
+}

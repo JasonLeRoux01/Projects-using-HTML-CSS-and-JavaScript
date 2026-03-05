@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="title">
+    <header>
+      <div class="logo">TC</div>
+      <div>
+        <h1 id="title">Tip Calculator</h1>
+        <p class="lead">Calculate tip per person and total per person quickly. Built with simple inputs and math logic.</p>
+      </div>
+    </header>
+
+    <section class="calc-grid">
+      <form id="tipForm" class="controls" novalidate>
+        <label>
+          Bill amount
+          <input id="bill" type="number" min="0" step="0.01" placeholder="0.00" inputmode="decimal" required>
+        </label>
+
+        <fieldset class="tip-buttons" aria-label="Tip percentage">
+          <legend>Select Tip %</legend>
+          <div class="buttons">
+            <button type="button" class="tipBtn" data-tip="5">5%</button>
+            <button type="button" class="tipBtn" data-tip="10">10%</button>
+            <button type="button" class="tipBtn" data-tip="15">15%</button>
+            <button type="button" class="tipBtn" data-tip="25">25%</button>
+            <button type="button" class="tipBtn" data-tip="50">50%</button>
+            <input id="customTip" type="number" min="0" step="1" placeholder="Custom" inputmode="numeric">
+          </div>
+        </fieldset>
+
+        <label>
+          Number of people
+          <input id="people" type="number" min="1" step="1" placeholder="1" inputmode="numeric" required>
+        </label>
+
+        <div class="form-actions">
+          <button id="resetBtn" type="button" class="btn secondary">Reset</button>
+        </div>
+      </form>
+
+      <aside class="results" aria-live="polite">
+        <div class="result-row">
+          <div class="label">Tip amount <span class="muted">/ person</span></div>
+          <div id="tipPerPerson" class="value">ZAR 0.00</div>
+        </div>
+        <div class="result-row">
+          <div class="label">Total <span class="muted">/ person</span></div>
+          <div id="totalPerPerson" class="value">ZAR 0.00</div>
+        </div>
+
+        <div id="error" class="error" aria-live="assertive"></div>
+      </aside>
+    </section>
+
+    <details style="margin-top:12px">
+      <summary>How it works (short)</summary>
+      <p class="small">JS reads bill, tip%, and people inputs, computes tip = bill * (tip%/100), tip per person = tip / people, total per person = (bill/people) + tip per person. Validation prevents division by zero and invalid input.</p>
+    </details>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
