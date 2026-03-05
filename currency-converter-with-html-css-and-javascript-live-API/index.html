@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <div class="currency-container">
+            <select id="currency-first">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CNY">CNY</option>
+                <option value="SEK">SEK</option>
+                <option value="NZD">NZD</option>
+                <option value="MXN">MXN</option>
+                <option value="SGD">SGD</option>
+                <option value="HKD">HKD</option>
+                <option value="NOK">NOK</option>
+                <option value="KRW">KRW</option>
+                <option value="TRY">TRY</option>
+                <option value="RUB">RUB</option>
+                <option value="INR">INR</option>
+                <option value="BRL">BRL</option>
+                <option value="ZAR" selected>ZAR</option>
+                <option value="DKK">DKK</option>
+                <option value="PLN">PLN</option>
+                <option value="TWD">TWD</option>
+                <option value="THB">THB</option>
+                <option value="MYR">MYR</option>
+                <option value="IDR">IDR</option>
+                <option value="CZK">CZK</option>
+                <option value="HUF">HUF</option>
+                <option value="ILS">ILS</option>
+            </select>
+            <input type="number" id="worth-first" placeholder="Enter amount" value="1" min="0">
+        </div>
+        <div class="currency-container">
+            <select id="currency-second">
+                <option value="USD" selected>USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CNY">CNY</option>
+                <option value="SEK">SEK</option>
+                <option value="NZD">NZD</option>
+                <option value="MXN">MXN</option>
+                <option value="SGD">SGD</option>
+                <option value="HKD">HKD</option>
+                <option value="NOK">NOK</option>
+                <option value="KRW">KRW</option>
+                <option value="TRY">TRY</option>
+                <option value="RUB">RUB</option>
+                <option value="INR">INR</option>
+                <option value="BRL">BRL</option>
+                <option value="ZAR">ZAR</option>
+                <option value="DKK">DKK</option>
+                <option value="PLN">PLN</option>
+                <option value="TWD">TWD</option>
+                <option value="THB">THB</option>
+                <option value="MYR">MYR</option>
+                <option value="IDR">IDR</option>
+                <option value="CZK">CZK</option>
+                <option value="HUF">HUF</option>
+                <option value="ILS">ILS</option>
+            </select>
+            <input type="number" id="worth-second" disabled>
+        </div>
+        <p class="exchange-rate" id="exchange-rate">1 ZAR = 0.060 USD</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
