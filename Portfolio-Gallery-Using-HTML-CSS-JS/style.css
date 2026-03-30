@@ -1,0 +1,136 @@
+/* ===================================
+   GLOBAL & RESET STYLES
+   =================================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 15px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #5673C8;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #87CEEB;
+}
+
+p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 4;
+    overflow: hidden;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ===================================
+   LAYOUT & CONTAINER
+   =================================== */
+main,
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===================================
+   HEADER
+   =================================== */
+header.title {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding: 30px 0;
+    background-color: #28a745;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+/* ===================================
+   PORTFOLIO GRID
+   =================================== */
+.row {
+    margin: 0 -18px;
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 20%;
+    padding: 6px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.column:hover {
+    width: 25%;
+    top: -20px;
+    box-shadow: 0 14px 8px rgba(0, 128, 0, 0.5);
+}
+
+/* ===================================
+   CARD CONTENT
+   =================================== */
+.content {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 100%;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content h3 {
+    margin: 12px 0 8px 0;
+}
+
+.content p {
+    margin: 0;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+/* Tablet devices (max-width: 850px) */
+@media screen and (max-width: 850px) {
+    .column {
+        width: 50%;
+    }
+    
+    .column:hover {
+        width: 55%;
+    }
+}
+
+/* Mobile devices (max-width: 400px) */
+@media screen and (max-width: 400px) {
+    .column {
+        width: 100%;
+    }
+    
+    .column:hover {
+        width: 100%;
+        top: -10px;
+    }
+}
