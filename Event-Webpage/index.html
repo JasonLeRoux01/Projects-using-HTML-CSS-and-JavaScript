@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>InfinitiTech TechCon</title>
+</head>
+<body>
+    <header>
+        <h1 data-typewriter>Welcome to InfinitiTech TechCon</h1>
+        <p>The Ultimate Technology and Programming Conference</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="about" class="animate-section">
+            <h2>About the Event</h2>
+            <p>InfinitiTech TechCon is an annual conference that brings together technology enthusiasts, developers, and industry leaders to explore the latest trends and innovations in the tech world. Join us for a day filled with insightful talks, hands-on workshops, and networking opportunities.</p>
+        </section>
+        <section id="schedule" class="animate-section">
+            <h2>Event Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Session</th>
+                        <th>Content</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="animate-row">
+                        <td>9:00 AM</td>
+                        <td>Opening Keynote</td>
+                        <td>InfinitiTech Coding Platform</td>
+                    </tr>
+                    <tr class="animate-row">
+                        <td>10:30 AM</td>
+                        <td>AI and Machine Learning</td>
+                        <td>InfinitiTech Coding Platform</td>
+                    </tr>
+                    <tr class="animate-row">
+                        <td>1:00 PM</td>
+                        <td>Lunch Break</td>
+                        <td>-</td>
+                    </tr>
+                    <tr class="animate-row">
+                        <td>2:00 PM</td>
+                        <td>Exploring The Future Of Cloud Computing</td>
+                        <td>InfinitiTech Coding Platform</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="speakers" class="animate-section">
+            <h2>Featured Speakers</h2>
+            <div class="speakers-grid">
+                <div class="speaker-card animate-row">
+                    <div class="speaker-icon">🤖</div>
+                    <h3>Dr. Jane Smith</h3>
+                    <p>AI Researcher at TechLabs</p>
+                </div>
+                <div class="speaker-card animate-row">
+                    <div class="speaker-icon">☁️</div>
+                    <h3>John Doe</h3>
+                    <p>Cloud Computing Expert at CloudCorp</p>
+                </div>
+                <div class="speaker-card animate-row">
+                    <div class="speaker-icon">💻</div>
+                    <h3>Emily Davis</h3>
+                    <p>Software Engineer at CodeWorks</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="animate-section">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
