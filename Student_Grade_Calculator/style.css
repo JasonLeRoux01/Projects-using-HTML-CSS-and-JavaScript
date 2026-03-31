@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1b262c 0%, #0f4c75 50%, #3282b8 100%);
+    font-family: 'Righteous', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+.container {
+    width: min(96vw, 480px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+    padding: 24px 22px;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.35);
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.app {
+    display: grid;
+    gap: 12px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+}
+
+.form-control {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 12px 14px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 1rem;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #ffd369;
+    transform: translateY(-1px);
+    box-shadow: 0 0 0 4px rgba(255, 211, 105, 0.2);
+}
+
+.form-button {
+    width: 100%;
+    font-size: 1rem;
+    color: #1b262c;
+    border: 0;
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-top: 6px;
+    background: linear-gradient(90deg, #ffd369, #ffaa00);
+    cursor: pointer;
+    font-weight: 700;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.form-button:active {
+    transform: translateY(0);
+}
+
+.showdata {
+    color: #f8f1f1;
+    font-size: 1.1rem;
+    margin-top: 16px;
+    border-radius: 10px;
+    padding: 14px;
+    background: rgba(0, 0, 0, 0.16);
+    line-height: 1.5;
+    min-height: 62px;
+    text-align: center;
+}
+
+@media (max-width: 420px) {
+    .container {
+        padding: 16px;
+    }
+
+    .container h1 {
+        font-size: 1.6rem;
+    }
+}
